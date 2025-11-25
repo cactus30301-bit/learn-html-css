@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이미지 피규어 하이퍼링크 앵커 복습 | Likelion Bootcamp</title>
+  </head>
+  <body>
+    <!-- body안에서 새로운 내용으로(h2) 복습 시작 -->
+    <a href="/index.html">Index로 이동</a>
+     <a href="#card-2">2번 카드로</a> 
+    <hr />
+    <h1>하이퍼링크 앵커 복습</h1>
+    <h2>텍스트 링크</h2>
+    <!-- 각 줄 마다 p태그 : ctrl alt w : p* -->
+    <p><a href="https://bootcamp.likelion.net/" title="멋쟁이 사자처럼 부트캠프 메인으로 이동합니다." target="_blank" rel="noopener noreferrer">멋쟁이 사자처럼 부트캠프</a></p>
+    <p><a href="https://github.com/seulbinim" title="깃허브 메인 화면으로 이동합니다." target="_blank" rel="noopener noreferrer">Github</a></p>
+    <p><a href="https://naver.com" title="네이버로 이동합니다." target="_blank" rel="noopener noreferrer">Naver</a></p>
+    <!-- 앵커 태그 사용 > 절대 경로 > 이후 꺽쇠 밖에 링크를 담을 텍스트 입력.  -->
+    <!-- 주소 옆에 title(마우스오버시 툴팁문구), target(열리게 될 탭), rel="noopener noreferrer" -->
+    <h2>텍스트 링크 + a</h2>
+    <!-- 다운로드 링크는 주소 쓰고 download만 입력 -->
+    <p><a href="/src/assets/pdf/google-seo-guide-ko.pdf" download>구글 SEO 가이드 download</a></p>
+    <!-- mailto:, tel: -->
+    <!-- 메일 보내기 링크, 뒤에 ?subject=문의사항 은 선택사항 -->
+    <p><a href="mailto:cactus30301@gmail.com?subject=문의사항">김효경에게 메일 보내기 mailto:</a></p>
+    <!-- tel:은 핸드폰에서 바로 전화걸기로 연결됨 -->
+    <p><a href="tel:01012345678">010-1234-5678 tel:</a></p>
+    <h2>이미지 링크</h2>
+    <a href="https://www.naver.com" title="갈색토끼를 누르면 네이버로 이동합니다." target="_blank" rel="noopener noreferrer">
+      <img src="/src/assets/images/rabbit.png" alt="네이버로 이동할 수 있는 토끼사진" /></a>
+    <h2>UI 마크업 실습</h2>
+<!-- figure : 독립적인 컨텐츠 단위로 묶는 컨테이너 -->
+ <!-- figcaption : figure 안의 콘텐츠에 대한 설명(캡션)을 제공하는 태그 -->
+    <figure>
+      <img src="/src/assets/thumbnail/meeting-room.jpg" alt="" />
+      <figcaption>
+        <p>RESPONSIVE WEB <br />DESIGN STRATEGIES</p>
+        <p>반응형 웹디자인 전략</p>
+        <a href="https://bootcamp.likelion.com" title="멋쟁이 사자처럼 강의 안내로 이동합니다." target="_blank" rel="noopener noreferrer">강의정보</a>
+      </figcaption>
+    </figure>
+
+    <h2>이미지와 피규어</h2>
+    <img width="500" src="/src/assets/images/newyork.jpg" alt="뉴욕" />
+
+
+
+    <!-- img태그로 svg이미지 넣기 -->
+    <figure>
+          <img width="200" height="200" src="/src/assets/svg/chitchat.svg" alt="챗봇 서비스" />
+          <figcaption>img태그로 넣은 svg파일로 동적제어 불가</figcaption>
+    </figure>
+
+    <!-- svg태그로 svg이미지 넣기 -->
+     <!-- svg도 svg태그 안에서 이미지 사이즈 조절가능 -->
+      <!-- 대신 alt(대체텍스트)는 title태그로 대신함 -->
+  <figure>
+    <svg width="200" class="h-12 w-12" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+      <title>챗봇 서비스</title>
+      <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="a">
+          <stop stop-color="#554477" offset="0%"></stop>
+          <stop stop-color="#00077E" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="b">
+          <stop stop-color="#988200" offset="0%"></stop>
+          <stop stop-color="#00077B" offset="100%"></stop>
+        </linearGradient>
+      </defs>
+      <g fill="none" fill-rule="evenodd">
+        <path d="M28.872 22.096c.084.622.128 1.258.128 1.904 0 7.732-6.268 14-14 14-2.176 0-4.236-.496-6.073-1.382l-6.022 2.007c-1.564.521-3.051-.966-2.53-2.53l2.007-6.022A13.944 13.944 0 0 1 1 24c0-7.331 5.635-13.346 12.81-13.95A9.967 9.967 0 0 0 13 14c0 5.523 4.477 10 10 10a9.955 9.955 0 0 0 5.872-1.904z" fill="url(#a)" transform="translate(1 1)"></path>
+        <path d="M35.618 20.073l2.007 6.022c.521 1.564-.966 3.051-2.53 2.53l-6.022-2.007A13.944 13.944 0 0 1 23 28c-7.732 0-14-6.268-14-14S15.268 0 23 0s14 6.268 14 14c0 2.176-.496 4.236-1.382 6.073z" fill="url(#b)" transform="translate(1 1)"></path>
+        <path d="M18 17a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM24 17a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM30 17a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" fill="#FFF"></path>
+      </g>
+    </svg>
+    <figcaption>챗봇 서비스</figcaption>
+  </figure>
+
+
+<h2>하이퍼링크 한번 더</h2>
+<p><a href="https://www.naver.com" title="이게 툴팁..암튼 클릭하면 네이버로 이동합니다" target="_blank" rel="noopener noreferrer">네이버</a></p>
+<p><a href="https://www.daum.net" title="다음으로 이동합니다" target="google">다음</a></p>
+<p><a href="https://www.google.com" title="구글로 이동합니다" target="google">구글</a></p>
+
+    <hr />
+
+<h2>UI 실습</h2>
+
+<div class="card" id="card-1">
+  <figure>
+    <img src="/src/assets/thumbnail/meeting-room.jpg" alt="" />
+    <figcaption>
+      <p>RESPONSIVE WEB<br />DESIGN STRATEGIES</p>
+      <p>반응형 웹디자인 전략</p>
+      <p><a href="www.google.com/" title="임시사이트로 이동합니다." target="_blank" rel="noopener noreferrer">바로 가기</a></p>
+    </figcaption>
+  </figure>
+</div>
+
+<div class="card" id="card-2">
+  <figure>
+    <img src="/src/assets/thumbnail/meeting-room.jpg" alt="" />
+    <figcaption>
+      <p>RESPONSIVE WEB<br />DESIGN STRATEGIES</p>
+      <p>반응형 웹디자인 전략</p>
+      <p><a href="www.google.com/" title="임시사이트로 이동합니다." target="_blank" rel="noopener noreferrer">바로 가기</a></p>
+    </figcaption>
+  </figure>
+  <a href="#top">맨위로</a>
+</div>
+    <!-- <div>
+  <figure>
+    <img src="/src/assets/thumbnail/meeting-room.jpg" alt="" />
+    <figcaption>
+      <p>RESPONSIVE WEB<br />DESIGN STRATEGIES</p>
+      <p>반응형 웹디자인 전략</p>
+    </figcaption>
+  </figure>
+  <a href="/">강의정보</a>
+</div> -->
+
+</html>
