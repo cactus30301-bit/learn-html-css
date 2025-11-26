@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>이미지 피규어 하이퍼링크 앵커 복습 | Likelion Bootcamp</title>
+    <title>이미지 피규어 하이퍼링크 앵커 테이블 복습</title>
   </head>
   <body>
     <!-- body안에서 새로운 내용으로(h2) 복습 시작 -->
@@ -119,5 +119,180 @@
   </figure>
   <a href="/">강의정보</a>
 </div> -->
+
+<!-- 09 테이블 복습 -->
+ <!-- 할 수 있 다 와 자 -->
+<h2>테이블 관련 요소</h2>
+<style>
+  .name, .total{
+    width: 100px;
+    background-color: aqua;
+  }
+    .html-css-java{
+    width: 100px;
+    background-color:antiquewhite;
+  }
+</style>
+<table border="1px">
+  <caption class="sr-only">프론트엔드 시험 결과</caption>
+  <colgroup>
+<!-- 인라인으로 스타일 주는게 복잡하니까 보편적으로 헤드 끝나기 전 스타일 태그(임베디드) 사용하여 스타일 적용 -->
+  <!-- <col class="name" style="background-color: cornsilk;" />
+  <col span="3" class="html-css-java" style="background-color: azure;"/>
+  <col class="total" style="background-color:beige;"/> -->
+    <col class="name" />
+    <col span="3" class="html-css-java"/>
+    <col class="total"/>
+  </colgroup>
+  <thead>
+    <tr>
+      <th scope="col" id="idname">이름</th>
+      <th scope="col" id="idhtml">HTML</th>
+      <th scope="col" id="idcss">CSS</th>
+      <th scope="col" id="idjava">JAVA</th>
+      <th scope="col" id="idtotal">합계</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+      <th scope="row" id="student-1">학생1</th>
+      <td headers="student-1 idhtml">80</td>
+      <td headers="student-1 idcss">90</td>
+      <td headers="student-1 idjava">60</td>
+      <td headers="student-1 idtotal">230</td>
+        </tr>
+      <tr>
+      <th scope="row" id="student-2">학생2</th>
+      <td headers="student-2 idhtml">100</td>
+      <td headers="student-2 idcss">70</td>
+      <td headers="student-2 idjava">90</td>
+      <td headers="student-2 idtotal">260</td>
+        </tr>
+        <tr>
+      <th scope="row" id="student-3">학생3</th>
+      <td headers="student-3 idhtml">60</td>
+      <td headers="student-3 idcss">40</td>
+      <td headers="student-3 idjava">90</td>
+      <td headers="student-3 idtotal">190</td>
+        </tr>
+        <tr>
+      <th scope="row" id="student-4">학생4</th>
+      <td headers="student-4 idhtml">90</td>
+      <td headers="student-4 idcss">60</td>
+      <td headers="student-4 idjava">90</td>
+      <td headers="student-4 idtotal">240</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- 셀합치기 -->
+ <style>
+  .name, .total{
+    width: 100px;
+    background-color: aqua;
+  }
+    .html-css-java{
+    width: 100px;
+    background-color:antiquewhite;
+  }
+</style>
+<table border="1px">
+  <caption class="sr-only">프론트엔드 시험 결과</caption>
+  <colgroup>
+<!-- 인라인으로 스타일 주는게 복잡하니까 보편적으로 헤드 끝나기 전 스타일 태그(임베디드) 사용하여 스타일 적용 -->
+  <!-- <col class="name" style="background-color: cornsilk;" />
+  <col span="3" class="html-css-java" style="background-color: azure;"/>
+  <col class="total" style="background-color:beige;"/> -->
+    <col class="name" />
+    <col span="3" class="html-css-java"/>
+  </colgroup>
+  <thead>
+    <tr>
+      <th scope="col">이름</th>
+      <th scope="col">HTML</th>
+      <th scope="col">CSS</th>
+      <th scope="col">JAVA</th>
+    </tr>
+    <tr>
+  </thead>
+    <tbody>
+      <th scope="row">학생1</th>
+      <td>80</td>
+      <td>90</td>
+      <td>60</td>
+        </tr>
+      <tr>
+      <th scope="row">학생2</th>
+      <td>100</td>
+      <td>70</td>
+      <td>90</td>
+        </tr>
+      </tbody>
+        <tfoot>
+          <tr>
+            <th scope="row">합계</th>
+            <td colspan="3">계산할때아님</td>
+          </tr>
+        </tfoot>
+</table>
+
+<h2>테이블 실습</h2>
+
+<style>
+  .time-book
+  {
+    width: 200px ; 
+    background-color: darkseagreen;}
+  .level-total
+  {
+    width: 200px;
+    background-color: khaki;
+  }
+  table
+  {
+    border: 1px solid purple;
+  }
+  table, th, td{
+    border: 1px solid purple;
+    border-spacing: 0;
+    border-collapse: collapse;
+  }
+</style>
+
+<table>
+  <!-- caption안에 span...왜째서..?  -->
+       <caption>
+        <span>입문자를 위한 Git과 HTML&amp;CSS 과정</span>
+        <span class="sr-only">학습시간, 난이도, 교육비 지원, 평가항목, 수료기준, 정원, 교재 정보 등을 나타낸 표</span>
+      </caption>
+  <colgroup>
+    <col span="2" class="time-book"/>
+    <col span="2" class="level-total"/>
+  </colgroup>
+
+  <tr>
+    <th scope="row">학습시간</th>
+    <td>09:00 ~ 17:00 (28시간)</td>
+    <th scope="row">난이도</th>
+    <td>초급</td>
+  </tr>
+  <tr>
+    <th scope="row">교육비 지원</th>
+    <td>고용보험 비환급</td>
+    <th scope="row">평가항목</th>
+    <td>출석률 100%</td>
+  </tr>
+  <tr>
+    <th scope="row">수료기준</th>
+    <td>총점 80점 이상시 수료</td>
+    <th scope="row">정원</th>
+    <td>24명</td>
+  </tr>
+  <tr>
+    <th scope="row">교재정보</th>
+    <td colspan="3">입문자를 위한 Git과 HTML&CSS
+    HTML & CSS 웹사이트 개발과 디자인 기초 (35,000원)</td>
+  </tr>
+</table>
 
 </html>
