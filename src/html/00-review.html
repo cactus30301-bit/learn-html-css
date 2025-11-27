@@ -295,4 +295,118 @@
   </tr>
 </table>
 
+<!-- 11. 섹션과 메인요소 -->
+<!-- WAI-ARIA -->
+ <h2>div WAI-ARIA 사용</h2>
+ <div role="banner">헤더</div>
+ <div role="navigation">메뉴</div>
+ <div role="article">콘텐츠섹션</div>
+ <div role="article">콘텐츠섹션</div>
+ <div role="complementary">부가정보</div>
+ <div role="contentinfo">푸터</div>
+<br />
+<h2>native tag</h2>
+ <header>헤더</header>
+ <nav>메뉴</nav>
+ <section>콘텐츠섹션</section>
+ <article>콘텐츠섹션</article>
+ <aside>부가정보</aside>
+ <footer>푸터</footer>
+  <!-- 네이티브 태그도 sr로 읽어줄 때는 위의 aria에 쓰인 용어로 읽어준다 그럼에도 native가 사용성 측면에선 더 낫다.-->
+
+  <!-- 12. 텍스트레벨요소 -->
+   <h2>텍스트 레벨 요소</h2>
+   <style>
+    .script{
+      font-size: 24px;
+    }
+   </style>
+
+   
+    <h3>위첨자, 아래첨자</h3>
+    <div class="script">H<sub>2</sub>0
+        X<sup>2</sup></div>
+    <div><abbr title="인간 자체가 강함">인자강</abbr></div>
+   
+    <h2>삭제된 정보</h2>
+    <div>
+      정상가 <s>19900원</s><br />
+      할인가 1990원
+    </div>
+
+    <div><del>정상가 19900원</del> -><ins>할인가 1990원</ins></div>
+    <div>나는 아침마다 주로 <del>블랙커피를 마셨다</del><ins>블랙티를 마셨다</ins></div>
+
+    <h2>저작권 및 법률 관련 정보</h2>
+    <div>
+      <small>copyright &copy;</small>
+    </div>
+    <h2>하이라이트 영역</h2>
+    <div>하이라이트 여기다가 줘볼까 아니 <mark>여기다가</mark></div>
+    
+    <!-- 13 address요소 -->
+
+ <footer>
+  <address>
+    <p>(주)멋쟁이 사자처럼 | 대표이사 나성영</p>
+    <p>서울시 종로구 종로3길 17 D타워 16~17층</p>
+    <p>사업자 번호 :264-88-01106 | 통신판매업 신고번호 : 2019 - 서울강남 - 00774</p>
+    <p>문의처 <a href="mailto:contact@likelion.net">contact@likelion.net</a></p>
+  </address>
+</footer>
+<!-- 어드레스는 연관된 정보나 연락처가 있는 곳에서 연락가능한 연락처를 address태그로 감싸는것 (주로 footer로 감싸고)
+ 바디나 아티클의 푸터 안에 온다. 여기선 바디가 없지만, 렌더링 할 때 자동으로 바디가 감싸기 때문에 괜찮아 링딩딩딩딩 링딩딩딩딩 -->
+<!-- picture & source -->
+    <!-- <hr />
+    <h1>picture, source 요소</h1>
+    <picture>
+      <source sizes="50vw" srcset="/src/assets/logo/netflix@1x.webp 420w, /src/assets/logo/netflix@2x.webp 656w" />
+      <img src="/src/assets/logo/netflix@1x.png" alt="NETFLIX" />
+    </picture>
+    <hr />
+    <picture>
+      <source srcset="/src/assets/rwd/image-1x.png 1x, /src/assets/rwd/image-2x.png 2x, /src/assets/rwd/image-3x.png 3x" />
+      <img src="/src/assets/rwd/image-src.png" alt="" />
+    </picture>
+    <hr /> -->
+<!-- 1번 오류뜸 sizes 있어야 한다고 하는데, sizes scrset 앞에 붙여도 에러 계속 떠서 그냥 원본 그대로 냅둠 -->
+
+<!-- 정리본 1번 -->
+ <picture>
+      <source sizes="50vw" srcset="/src/assets/rwd/small-550.jpg 500w" media="(max-width: 500px)">
+      <img src="/src/assets/rwd/normal-1920.jpg" alt="테스트이기 때문에 지금은 생략" />
+    </picture>
+
+    <!-- 정리본 2 -->
+
+
+    <picture>
+      <source sizes="50vw" srcset="/src/assets/rwd/small-550.jpg 500w" media="(max-width: 500px)" />
+      <source sizes="50vw" srcset="/src/assets/rwd/medium-1024.jpg 1024w" media="(max-width: 768px)" />
+      <source sizes="50vw" srcset="/src/assets/rwd/large-1600.jpg 1600w" media="(max-width: 1280px)" />
+      <img src="/src/assets/rwd/normal-1920.jpg" alt="" />
+    </picture>
+
+    <!-- 정리본 3 -->
+        <picture>
+      <source 
+      srcset="/src/assets/rwd/image-1x.png 1x, /src/assets/rwd/image-2x.png 2x"
+      />
+      <img src="/src/assets/rwd/image-src.png" alt="" />
+    </picture>
+
+    <!-- 정리본 4(오류) 이건 정리본 5 -->
+<picture>
+      <source sizes="50vw" srcset="/src/assets/rwd/small-550.jpg 550w" media="(max-width: 500px)" />
+      <source sizes="50vw" srcset="/src/assets/rwd/medium-1024.jpg 1024w" media="(max-width: 768px)" />
+      <source sizes="50vw" srcset="/src/assets/rwd/large-1600.jpg 1600w" media="(max-width: 1280px)" />
+      <img src="/src/assets/rwd/normal-1920.jpg" alt="" />
+    </picture>
+
+    <!-- 정리본 6 넷플릭스 -->
+     <picture>
+      <source sizes="50vw" srcset="/src/assets/logo/netflix@1x.webp 420w, /src/assets/logo/netflix@2x.webp 656w" />
+      <img src="/src/assets/logo/netflix@1x.png" alt="NETFLIX" />
+    </picture>
+    
 </html>
