@@ -9,7 +9,7 @@
     <a href="/index.html">Index로 이동</a>
     <hr />
     <h1 tabindex="0">폼(input) 요소</h1>
-    
+
     <form action="">
       <fieldset>
         <legend>필수 입력</legend>
@@ -25,48 +25,78 @@
             <input type="text" />
           </label>
         </div>
-
       </fieldset>
     </form>
-  
-    <!-- 슬비샘 -->
-     
-<!doctype html>
-<html lang="ko-KR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>폼(input) 요소 | Likelion Bootcamp</title>
-  </head>
-  <body>
-    <a href="/index.html">Index로 이동</a>
+
     <hr />
-    <h1>폼(input) 요소</h1>
-    <!-- 한 줄 입력 서식 -->
-    <form action="">
-      <fieldset>
-        <legend>필수 입력</legend>
+    <form id="inputForm" action="https://formspree.io/f/xeqwwbwk" method="post">
+      <!-- 텍스트 입력 서식 -->
+      <div>
+        <label for="userID">이름</label>
+        <input type="text" id="userID" required placeholder="예)홍길동" name="name" />
+      </div>
 
-        <div>
-          <label for="userName">이름</label>
-          <input type="text" id="userName" />
-        </div>
-        <div>
-          <label>
-            비밀번호
-            <input type="text" />
-          </label>
-        </div>
-      </fieldset>
+      <!-- 비밀번호 입력 서식 -->
+      <div>
+        <label for="userPwd">비밀번호</label>
+        <input type="password" pattern="^(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&]).{8,}$" id="userPwd" required placeholder="최소 8자리 이상" name="pwd" />
+      </div>
+
+      <!-- 이메일 입력 서식 -->
+      <div>
+        <label for="userEmail">이메일</label>
+        <input type="email" id="userEmail" required placeholder="예)guest@likelion.net" name="email" />
+      </div>
+
+      <!-- 전화번호 입력 서식 -->
+      <div>
+        <label for="userPhone">전화번호</label>
+        <input type="tel" id="userPhone" pattern="[0-9]{10}" placeholder="예)010-0000-0000" name="phone" />
+      </div>
+      <!-- URL 입력 서식 -->
+      <div>
+        <label for="userSns">SNS</label>
+        <input type="url" id="userSns" placeholder="예)https://www.instagram.com/jaimeleflancoco" name="sns" />
+      </div>
+      <!-- 검색어 입력 서식 -->
+      <div>
+        <label for="search">검색어</label>
+        <input type="search" id="search" placeholder="검색어 예)멋쟁이 사자처럼" name="search" />
+      </div>
+
+      <!-- 라디오 입력 서식 -->
+      <div>
+        <input type="radio" id="male" name="gender" value="남자" checked />
+        <label for="male">남자</label>
+        <input type="radio" id="female" name="gender" value="여자" />
+        <label for="female">여자</label>
+      </div>
+      <!-- 체크박스 입력 서식 -->
+      <div>
+        <input type="checkbox" id="html" name="frontend" value="html" checked />
+        <label for="html">HTML</label>
+        <input type="checkbox" id="css" name="frontend" value="css" />
+        <label for="css">CSS</label>
+        <input type="checkbox" id="js" name="frontend" value="js" />
+        <label for="js">Javascript</label>
+      </div>
+      <!-- 파일 첨부 서식 -->
+      <div>
+        <input type="file" />
+      </div>
+      <!-- number -->
+      <div>
+        <input type="number" min="10" max="200" step="10" name="수량" id="quantity" />
+        <label for="quantity"></label>
+      </div>
+
+      <!-- 전송 버튼 -->
+      <input type="submit" value="전송" />
+      <!-- <button type="submit">제출</button> -->
+      <!-- 일반 버튼 -->
+      <input type="button" value="click!" />
     </form>
+    <!-- 초기화 버튼 -->
+    <input form="inputForm" type="reset" value="초기화" />
   </body>
 </html>
-  
-<fieldset>
-  
-</fieldset>
-
-
-  </body>
-</html>
-
