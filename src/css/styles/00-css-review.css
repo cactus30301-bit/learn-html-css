@@ -1,0 +1,77 @@
+* {
+  background-color: azure;
+}
+
+body {
+  background-color: burlywood;
+}
+
+h1 {
+  font-size: 78px;
+}
+
+.test-lorem {
+  color: teal;
+}
+
+.rhcp {
+  color: tomato;
+  font-size: 48px;
+}
+
+.californication {
+  color: tomato;
+}
+
+h2 + p {
+  font-weight: 600;
+  font-style: oblique;
+}
+
+.test-lorem::first-letter {
+  font-size: 40px;
+}
+
+body::selection {
+  color: chartreuse;
+  background-color: darkslateblue;
+}
+
+a:hover {
+  background-color: mediumseagreen;
+  font-size: 50px;
+  color: thistle;
+  font-weight: 900;
+}
+
+.longwayoff {
+  line-height: 160%;
+}
+
+:root {
+  background: yellow;
+}
+
+div .longwayoff {
+  background-color: yellow;
+}
+
+body {
+  color: green;
+}
+
+p {
+  color: red;
+}
+
+.wrapper {
+  color: blue;
+}
+
+#coding {
+  color: blueviolet;
+}
+
+.wrapper p {
+  color: cadetblue;
+}
