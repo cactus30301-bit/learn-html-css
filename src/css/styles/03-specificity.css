@@ -1,0 +1,38 @@
+body {
+  color: green;
+}
+
+.wrapper {
+  color: blue;
+}
+
+.note {
+  color: red;
+}
+/* ㄴ클래스 선택자 방식 */
+
+#coding {
+  color: blue;
+}
+
+.a.b.c.d.e.f.g.h.i.j.k. {
+  color: green;
+}
+
+body .wrapper p.note {
+  color: red;
+}
+
+body p.note {
+  color: purple;
+}
+
+/* ㄴ요소선택자 방식 */
+
+p.note {
+  color: purple;
+}
+
+.wrapper p {
+  color: skyblue !important;
+}
