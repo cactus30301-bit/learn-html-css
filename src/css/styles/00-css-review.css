@@ -1,10 +1,11 @@
-* {
+/* * {
   background-color: azure;
-}
+} */
 
 body {
   background-color: burlywood;
   font-family: 'SUIT Variable', serif;
+  line-height: 1.6;
 }
 
 h1 {
@@ -58,6 +59,22 @@ div .longwayoff {
   background-color: yellow;
 }
 
+.advice {
+  background-color: #012;
+  position: relative;
+  top: -0.8em;
+  display: block;
+
+  span {
+    background-color: aquamarine;
+    position: relative;
+    top: -0.4em;
+    right: -0.4em;
+    padding: 10px;
+    display: block;
+  }
+}
+
 body {
   color: green;
 }
@@ -79,9 +96,102 @@ p {
 }
 
 .fakep {
-  font-size: 1.5em;
+  font-size: 20px;
+  font-variant: small-caps;
 }
 
 .fakep div {
-  font-size: 0.7em;
+  font-size: 1.5em;
+}
+
+.note.bootcamp {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #66889980;
+}
+
+.californication {
+  font-size: clamp(2rem, 2.5vw, 3rem);
+}
+
+.fontvalue {
+  font:
+    500 italic small-caps 1.2rem/1.6 'SUIT Variable',
+    sans-serif;
+}
+
+.line-1 {
+  display: block;
+  background-color: #998909;
+  font-weight: 800;
+  color: aliceblue;
+}
+
+.lines span:last-child {
+  background-color: #fcf;
+  display: block;
+  width: 500px;
+}
+.lines span:first-child {
+  background-color: #0cc;
+  display: block;
+  width: 9vw;
+  aspect-ratio: 1/1;
+}
+
+.overflowtest {
+  background-color: #0cf;
+  color: blanchedalmond;
+  font-weight: 700;
+  width: 20rem;
+  aspect-ratio: 1/1;
+  overflow: auto;
+}
+
+.danchoo ul {
+  background-color: #fcc;
+}
+.danchoo li {
+  list-style: lower-roman;
+  list-style-position: inside;
+}
+.sticker ul {
+  background-color: azure;
+  list-style: inside url(/src/assets/thumbnail/new.png);
+
+  &:hover {
+    background-color: #ffc;
+    color: darkslategray;
+    font-weight: 600;
+  }
+  :hover {
+    background-color: #012;
+    color: chartreuse;
+    font-family: sans-serif;
+    font-size: 1.2em;
+  }
+}
+.danchoo li:hover {
+  background-color: azure;
+  font-weight: 900;
+}
+.danchoo span:hover {
+  background-color: #fd0;
+  font-weight: 900;
+}
+
+.sticker {
+  padding: 3em;
+}
+
+.parent {
+  position: relative;
+  font-size: 1.5em;
+}
+.absolute-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 900;
+  font-size: 2em;
 }

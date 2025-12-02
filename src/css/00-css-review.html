@@ -11,9 +11,10 @@
     <link rel="stylesheet" href="/src/common/index.css" />
     <link rel="stylesheet" href="/src/css/styles/00-css-review.css " />
   </head>
-  <body>
+  <body class="css">
     <a href="/index.html">Index로 이동</a>
-    <h1>CSS 복습</h1>
+    <h1><em>CSS 복습</em></h1>
+    <!-- index.css에 연결된 modern-reset에 h1초기화 태그가 걸려 있어서 em 태그 먹지 않음. -->
     <h2>선택자 Selector</h2>
     <p class="test-lorem">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, possimus. Accusantium ratione error dolores nostrum inventore sit. Officia quae consectetur earum quaerat sapiente, magnam enim? Corporis impedit non aliquid animi.</p>
     <p class="test-lorem">So what i've got exacly here anybody from Cork Waterfall checkin mouth of shannon</p>
@@ -23,9 +24,10 @@
     <p>Why the peole crazy in this song?</p>
     <div class="longwayoff">
       Descendant Combination AI 코딩 도구를 활용하면 코드 생성 및 자동화, 개발 워크플로우와의 통합 등이 가능하며 기존 개발 환경 대비 생산성을 높일 수 있습니다. 그러나 개발자를 꿈꾸며 학습을하는 예비 개발자에게 AI 코딩 도구는 양날의 검이 될 수 있습니다. AI 코딩 도구에만 의존하는 주니어 개발자는
-      경쟁력을 갖출 수 없기 때문입니다. 오히려 더 깊이 있게 언어를 학습하고 좋은 질문을 할 수 있도록 문해력(Literacy)을 기르는 것이 필요합니다. 다만 AI 도구를 완전히 배제하는 것이 아닌 학습을 위한 파트너로서 활용할 것을 추천합니다. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab totam
-      unde quis omnis soluta maxime qui harum perspiciatis odio aliquid, excepturi reiciendis. Reiciendis aliquid, beatae corporis odit labore aut quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus similique, ex voluptatum repellendus animi veniam sint iste at laborum, ab
-      ullam libero. Dolores voluptatum, nesciunt nobis quo magni ducimus repudiandae.
+      경쟁력을 갖출 수 없기 때문입니다. 오히려 더 깊이 있게 언어를 학습하고 좋은 질문을 할 수 있도록 문해력(Literacy)을 기르는 것이 필요합니다.
+      <span class="advice"><span>다만 AI 도구를 완전히 배제하는 것이 아닌 학습을 위한 파트너로서 활용할 것을 추천합니다.</span></span>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab totam unde quis omnis soluta maxime qui harum perspiciatis odio aliquid, excepturi reiciendis. Reiciendis aliquid, beatae corporis odit labore aut quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+      similique, ex voluptatum repellendus animi veniam sint iste at laborum, ab ullam libero. Dolores voluptatum, nesciunt nobis quo magni ducimus repudiandae.
     </div>
     <div>
       <div class="longwayoff">
@@ -54,17 +56,54 @@
       </div>
     </div>
 
-    <div>
+    <div class="fontvalue">
       Descendant Combination AI 코딩 도구를 활용하면 코드 생성 및 자동화, 개발 워크플로우와의 통합 등이 가능하며 기존 개발 환경 대비 생산성을 높일 수 있습니다. 그러나 개발자를 꿈꾸며 학습을하는 예비 개발자에게 AI 코딩 도구는 양날의 검이 될 수 있습니다. AI 코딩 도구에만 의존하는 주니어 개발자는
       경쟁력을 갖출 수 없기 때문입니다. 오히려 더 깊이 있게 언어를 학습하고 좋은 질문을 할 수 있도록 문해력(Literacy)을 기르는 것이 필요합니다. 다만 AI 도구를 완전히 배제하는 것이 아닌 학습을 위한 파트너로서 활용할 것을 추천합니다. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab totam
       unde quis omnis soluta maxime qui harum perspiciatis odio aliquid, excepturi reiciendis. Reiciendis aliquid, beatae corporis odit labore aut quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus similique, ex voluptatum repellendus animi veniam sint iste at laborum, ab
       ullam libero. Dolores voluptatum, nesciunt nobis quo magni ducimus repudiandae.
     </div>
-    <div>
+    <div class="lines">
+      Descendant Combination AI 코딩 도구를 활용하면 코드 생성 및 자동화, 개발 워크플로우와의 통합 등이 가능하며 기존 개발 환경 대비 생산성을 높일 수 있습니다. 그러나 개발자를 꿈꾸며 학습을하는 예비 개발자에게 AI 코딩 도구는 양날의 검이 될 수 있습니다. AI 코딩 도구에만 의존하는 주니어 개발자는
+      경쟁력을 갖출 수 없기 때문입니다. <span class="line-1">오히려 더 깊이 있게 언어를 학습하고 좋은 질문을 할 수 있도록 문해력(Literacy)을 기르는 것이 필요합니다.</span> 다만 AI 도구를 완전히 배제하는 것이 아닌 학습을 위한 파트너로서 활용할 것을 추천합니다. Lorem ipsum, dolor sit amet consectetur
+      adipisicing elit. <span>Ab totam unde quis omnis soluta maxime qui harum perspiciatis odio aliquid, excepturi reiciendis.</span> Reiciendis aliquid, beatae corporis odit labore aut quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus similique, ex voluptatum repellendus
+      animi veniam sint iste at laborum, ab ullam libero. Dolores voluptatum, nesciunt nobis quo magni ducimus repudiandae.
+    </div>
+
+    <h2>박스 모델</h2>
+    <a href="/src/css/05-box-model.html">수업 시간에 배운 박스 모델</a>
+    <div class="overflowtest">
       Descendant Combination AI 코딩 도구를 활용하면 코드 생성 및 자동화, 개발 워크플로우와의 통합 등이 가능하며 기존 개발 환경 대비 생산성을 높일 수 있습니다. 그러나 개발자를 꿈꾸며 학습을하는 예비 개발자에게 AI 코딩 도구는 양날의 검이 될 수 있습니다. AI 코딩 도구에만 의존하는 주니어 개발자는
       경쟁력을 갖출 수 없기 때문입니다. 오히려 더 깊이 있게 언어를 학습하고 좋은 질문을 할 수 있도록 문해력(Literacy)을 기르는 것이 필요합니다. 다만 AI 도구를 완전히 배제하는 것이 아닌 학습을 위한 파트너로서 활용할 것을 추천합니다. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab totam
       unde quis omnis soluta maxime qui harum perspiciatis odio aliquid, excepturi reiciendis. Reiciendis aliquid, beatae corporis odit labore aut quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus similique, ex voluptatum repellendus animi veniam sint iste at laborum, ab
       ullam libero. Dolores voluptatum, nesciunt nobis quo magni ducimus repudiandae.
+    </div>
+    <div class="danchoo">
+      <ul>
+        <li>목록 아이템1</li>
+        <span>take me to london kiss me on the london eye</span>
+        <li>목록 아이템2</li>
+        <span>take me to london kiss me on the london eye</span>
+        <li>목록 아이템3</li>
+        <span>take me to london kiss me on the london eye</span>
+        <li>목록 아이템4</li>
+        <span>take me to london kiss me on the london eye</span>
+      </ul>
+    </div>
+    <div class="sticker">
+      <ul>
+        <li>목록 아이템1</li>
+        <span>take me to london kiss me on the london eye</span>
+        <li>목록 아이템2</li>
+        <span>take me to london kiss me on the london eye</span>
+        <li>목록 아이템3</li>
+        <span>take me to london kiss me on the london eye</span>
+        <li>목록 아이템4</li>
+        <span>take me to london kiss me on the london eye</span>
+      </ul>
+    </div>
+    <div class="parent">
+      <div class="absolute-child">앱솔루트</div>
+      <p>이 문단은 앱솔루트 위치와 상관없이 위로 올라옴</p>
     </div>
   </body>
 </html>
