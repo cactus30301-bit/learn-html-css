@@ -1,0 +1,74 @@
+a {
+  background: tan;
+  padding: 10px;
+  font: 500 italic 20px serif;
+  &:hover {
+    background: whitesmoke;
+    color: teal;
+    font: 900 normal 22px san-serif;
+  }
+}
+
+h1 {
+  background: #65f;
+  font: 200 48px san-serif;
+  color: #fff;
+  width: 7em;
+}
+
+h2 {
+  margin-block: clamp(1em, 1.5em, 2em);
+  font-family: serif;
+  /* font: [style] [variant] [weight] [size] [/line-height] family; */
+}
+.avatarcpnt {
+  --avatar-size: 64px;
+  --status-size: 16px;
+  --nonactive-color: #dbdbdb;
+  --active-color: #4bfe88;
+  --border-color: #fff;
+
+  position: relative;
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  /* border: 5px solid red; */
+  /* defined as box-sizing: border-box; in modern-reset 
+  > changed img size to 54*64 when it be applied border value*/
+  padding: 0;
+  border: none;
+  background: transparent;
+
+  img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+/* <percentage>
+Defines the width as a percentage of the containing block's width.
+컨테이닝 블록(부모 요소)의 가로 퍼센티지로서 자신의 가로를 정의
+img 가 100%라면
+img의 컨테이닝블록(div.avatarcpnt)가로의 100%
+퍼센티지 값이 img 원본에 대한 퍼센티지가 아니고, 컨테이닝박스에 대한 퍼센티지!
+ */
+
+/* 컨테이닝 블록의 가로 퍼센티지로 가로를 정의... */
+
+.avatarstate {
+  /* display: block; --no need to declare block as absolute brings block value */
+  background-color: var(--nonactive-color);
+  width: calc(var(--status-size) / var(--avatar-size) * 100%);
+  aspect-ratio: 1/1;
+  height: var(--status-size);
+  position: absolute;
+  border-radius: 50%;
+  /* border: 2px solid #ffffff; */
+  box-shadow: 0 0 0 2px #fff;
+  right: 0;
+  bottom: 0;
+
+  &.on-line {
+    background: var(--active-color);
+  }
+}
