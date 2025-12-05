@@ -1,0 +1,52 @@
+/* 유틸리티 바 */
+.utility-bar {
+  --spacing: 8px;
+
+  margin-block: 0.5rem;
+  background: yellow;
+  font-size: 0.875rem;
+  display: flow-root;
+  text-transform: uppercase;
+  padding: calc(var(--spacing) / 2);
+
+  li {
+    float: inline-start;
+  }
+
+  span,
+  a {
+    float: inline-start;
+    padding: calc(var(--spacing) / 2);
+  }
+}
+
+/* 유틸리티바 비포 */
+/* 유틸리티 바 */
+.utility-bar-before {
+  --spacing: 8px;
+
+  font-size: 0.875rem;
+  display: flow-root;
+  text-transform: uppercase;
+  padding: calc(var(--spacing) / 2);
+  /* float: left; */
+
+  li {
+    float: inline-start;
+  }
+  li:nth-child(n + 2)::before {
+    content: '|';
+  }
+  /* 
+    &::before {
+      content: ':';
+      float: inline-start;
+      padding: 0.25rem; */
+}
+
+li:nth-child(n + 2)::before,
+a {
+  float: inline-start;
+  padding: calc(var(--spacing) / 2);
+  background: pink;
+}
