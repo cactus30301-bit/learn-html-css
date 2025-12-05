@@ -1,0 +1,65 @@
+/* 웹 관련 용어 */
+/* 컴포넌트 */
+.term {
+  /* background: #ffc; */
+  font-size: 0.875rem;
+  display: flow-root;
+  line-height: 1.5;
+
+  img {
+    float: inline-start;
+  }
+  strong {
+    color: #296897;
+    font-weight: 700;
+    margin-block-start: -3px;
+    margin-block-end: 4px;
+  }
+
+  strong,
+  p {
+    background: #ff5;
+    float: inline-end;
+    inline-size: calc(100% - 76px);
+  }
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* 레이아웃 */
+.terms {
+  background: linear-gradient(#ccc, #eee);
+  border-radius: 5px;
+}
+
+/* 레이아웃 */
+/* .terms {
+  background: linear-gradient(to bottom, #ccc, #eee);
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 16px;
+
+  h2 {
+    font-weight: 700;
+    font-size: 1rem;
+    margin-block-end: 16px;
+  }
+
+  .term {
+    margin-block-start: 12px;
+  }
+
+  div.term:nth-of-type(even) {
+    strong,
+    p {
+      float: inline-start;
+    }
+
+    img {
+      float: inline-end;
+    }
+  }
+} */
