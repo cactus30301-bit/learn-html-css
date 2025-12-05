@@ -1,0 +1,58 @@
+.members-wrapper {
+  overflow: auto;
+  background: yellow;
+  block-size: 500px;
+
+  /* thead {
+    position: sticky;
+    top: 0;
+    background: var(--black);
+    color: var(--white);
+  }
+
+  tfoot {
+    position: sticky;
+    bottom: 0;
+    background: var(--black);
+    color: var(--white);
+  } */
+}
+
+.members {
+  border-inline: 1px solid var(--black);
+  inline-size: 100%;
+}
+.number {
+  inline-size: 15%;
+}
+
+.name {
+  inline-size: 25%;
+}
+.email {
+  inline-size: 30%;
+}
+.phone {
+  inline-size: 30%;
+}
+thead tr {
+  position: sticky;
+  top: 0;
+}
+
+thead tr,
+tfoot tr {
+  background: var(--black);
+  color: var(--white);
+}
+
+tr:nth-child(even) {
+  background: var(--gray);
+}
+
+th,
+td {
+  padding: 1em;
+  text-align: center;
+  white-space: nowrap;
+}
