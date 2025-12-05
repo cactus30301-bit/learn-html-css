@@ -2,7 +2,6 @@
 .utility-bar {
   --spacing: 8px;
 
-  margin-block: 0.5rem;
   background: yellow;
   font-size: 0.875rem;
   display: flow-root;
@@ -11,6 +10,7 @@
 
   li {
     float: inline-start;
+    display: flow-root;
   }
 
   span,
