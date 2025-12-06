@@ -1,0 +1,78 @@
+h2 {
+  padding: 0.3em;
+}
+/* flex review */
+.like {
+  background: sandybrown;
+  display: flex;
+  flex-direction: column;
+
+  div:nth-child(even) {
+    background: lightsteelblue;
+    order: 1;
+  }
+}
+
+.like-item2 {
+  background: yellow;
+}
+
+/* flex-wrap */
+.lion {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5em;
+  inline-size: 600px;
+  background: lightcyan;
+
+  > div {
+    inline-size: 150px;
+    background: lightseagreen;
+  }
+}
+
+/* flex-flow */
+/* flex direction & wrap */
+.cheetah {
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  inline-size: 450px;
+  background: lightgrey;
+
+  > div {
+    inline-size: 200px;
+    background: lightpink;
+  }
+}
+
+/* justify-content */
+.euid {
+  background-color: burlywood;
+  display: flex;
+  /* flex-direction: row;
+  flex-wrap: nowrap;  */
+  /* flex-flow: row nowrap; */
+  justify-content: center;
+  inline-size: 600px;
+  /* padding: 1em; */
+
+  > div {
+    inline-size: 100px;
+    background-color: tomato;
+  }
+}
+
+/* align-items */
+.frontend {
+  background: darkkhaki;
+  display: flex;
+  flex-flow: column wrap;
+  inline-size: 600px;
+  block-size: 200px;
+
+  align-items: baseline;
+
+  > div {
+    background-color: violet;
+  }
+}

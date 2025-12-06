@@ -1,0 +1,75 @@
+/* 여백 */
+h2 {
+  margin-block: 1rem;
+}
+
+/* 유틸리티바 */
+ul {
+  display: flow-root;
+  inline-size: 30rem;
+  /* background: yellow; */
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  display: flow-root;
+
+  li {
+    /* background: skyblue; */
+    float: inline-start;
+    display: flow-root;
+
+    span,
+    a {
+      /* background: pink; */
+      padding: 0.5rem;
+      float: inline-start;
+      /* border: 1px solid blue; */
+    }
+  }
+}
+
+/* 테이블 */
+
+.members-wrap {
+  block-size: 21.875rem;
+  overflow: auto;
+}
+
+.members {
+  text-align: center;
+  overflow: scroll;
+  white-space: nowrap;
+  border-inline: 1px solid black;
+  inline-size: 100%;
+}
+.number {
+  inline-size: 10%;
+}
+.name {
+  inline-size: 20%;
+}
+.email {
+  inline-size: 40%;
+}
+.phone {
+  inline-size: 30%;
+}
+
+thead {
+  position: sticky;
+  top: 0;
+}
+
+td,
+th {
+  padding: 1rem;
+}
+
+tr:nth-child(even) {
+  background-color: antiquewhite;
+}
+
+thead tr,
+tfoot tr {
+  background-color: #121212;
+  color: white;
+}
