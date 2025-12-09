@@ -1,0 +1,32 @@
+/* 버튼 circle-gradient 먼저 만들어보기 */
+.circle-gradient {
+
+  --size: 24px;
+  --green-200:#03cc5c;
+  --green-300: #03cca8;
+  --start-color: var(--green-200), #1bf008;
+  --end-color: var(--green-300), #03cca8;
+
+  background: linear-gradient(135deg, var(--start-color), var(--end-color));
+  /* appearance: none; */
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  border: 0;
+  position: relative;
+
+  &::before{
+    --inner-size: calc(var(--size) / 3);
+
+    content: '';
+    position: absolute;
+    /* top: 50%;
+    left: 50%; */
+    translate: -50% -50%;
+    background: white;
+    width: var(--inner-size);
+    aspect-ratio: 1/1;
+    border-radius: inherit;
+  }
+  
+}
