@@ -1,0 +1,102 @@
+:root {
+  --white: #fff;
+  --green-100: #03cc5c;
+  --green-200: #1bf008;
+  --green-300: #03cca8;
+
+  --blue-100: #e9f0fd;
+  --red-100: #ff1414;
+
+  --gray-100: #bcc3c7;
+  --gray-200: #9b9a90;
+  --gray-300: #6d7478;
+
+  --primary-color: var(--green-100);
+  --start-color: var(--green-200);
+  --end-color: var(--green-300);
+  --active-color: var(--blue-100);
+}
+
+/* 로그인 컴포넌트 */
+/* 로고 */
+.logo {
+  /* background: yellow; */
+  display: block;
+  inline-size: clamp(164px, 51.25%, 230px);
+  width: clamp(164px, 51.25%, 230px);
+
+  svg {
+    /* background: pink; */
+    width: 100%;
+    vertical-align: top;
+  }
+}
+
+/* 입력서식 */
+.input {
+  /* background: pink; */
+
+  &:has(:user-invalid) .error-message {
+    visibility: visible;
+  }
+  input {
+    /* background: yellow; */
+    inline-size: 100%;
+    block-size: 48px;
+    min-inline-size: 0;
+    border: 1px solid gray;
+    padding-inline-start: 0.75rem;
+
+    &:read-only {
+      background: lightgray;
+    }
+
+    /* &:user-invalid + .error-message {
+    visibility: visible;
+  } */
+  }
+
+  .error-message {
+    /* background: skyblue; */
+    visibility: hidden;
+    color: tomato;
+    font-size: 0.75rem;
+    margin-block-start: 0.5em;
+  }
+}
+
+/* visibility 실험 */
+.visibility {
+  margin-block: 12px;
+}
+
+.like {
+  background: yellow;
+
+  .lion {
+    visibility: hidden;
+  }
+  .d-none {
+    display: none;
+  }
+}
+
+/* 버튼 */
+.button {
+  border: 0;
+  padding: 1em;
+
+  &.button-fill {
+    background: var(--green-200);
+    color: var(--white);
+  }
+  &:disabled {
+    background: var(--gray-200);
+  }
+
+  &:not(:disabled):hover,
+  &:not(:disabled):focus,
+  &:not(:disabled):active {
+    background: var(--green-300);
+  }
+}
