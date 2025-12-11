@@ -102,6 +102,31 @@
 }
 
 /* 체크 박스 - 배경 이미지 */
+.checkbox {
+  position: relative;
+
+  /* 배경 이미지 활용 */
+  &.bg-icon {
+    label {
+      display: block;
+      background: url(/src/assets/naver/unchecked.svg) no-repeat;
+      padding-inline-start: 32px;
+      block-size: 24px;
+      align-content: center;
+    }
+
+    input:checked + label {
+      background-image: url(/src/assets/naver/checked.svg);
+    }
+    input {
+      position: absolute;
+      inline-size: 24px;
+      block-size: 24px;
+      margin: 0;
+      appearance: none;
+    }
+  }
+}
 
 /* 링크 텍스트 */
 .textlink-new {
