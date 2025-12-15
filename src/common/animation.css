@@ -1,3 +1,9 @@
+@property --angle {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+
 /* 애니메이션 관련 CSS */
 /* fade */
 @keyframes fade {
@@ -25,6 +31,7 @@
     /* transform: translateY(0); */
     translate: 0 0;
   }
+
   100% {
     /* transform: translateY(-20px); */
     translate: 0 -20px;
@@ -36,8 +43,9 @@
   0% {
     translate: 0 0;
   }
+
   100% {
-    translate: -20px 0;
+    translate: -10px 0;
   }
 }
 
@@ -46,8 +54,19 @@
   0% {
     rotate: y 0;
   }
+
   100% {
     rotate: y 360deg;
+  }
+}
+
+/* pulse */
+@keyframes pulse {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 1.1;
   }
 }
 
@@ -84,13 +103,11 @@
   }
 }
 
-/* border roate 애니메이션 */
 /* angle */
 @keyframes angle {
   0% {
-    --anglel: 0deg;
+    --angle: 0deg;
   }
-
   100% {
     --angle: 360deg;
   }
