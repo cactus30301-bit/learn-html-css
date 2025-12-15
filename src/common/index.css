@@ -2,4 +2,84 @@
 @import '/src/common/theme.css';
 @import '/src/common/a11y.css';
 @import '/src/common/base.css';
-@import "/src/common/animation.css";
+@import '/src/common/animation.css';
+
+/* @font-face {
+  font-family: 'MapoGeumbitnaru';
+  src: url('https://gcore.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoGoldenPierA.woff') format('woff');
+  font-weight: normal;
+  font-display: swap;
+} */
+
+* {
+  cursor: url('/favicon/bs.png'), auto;
+  hr {
+    display: none;
+  }
+}
+
+body {
+  /* font-family: 'MapoGeumbitnaru', serif; */
+  font-family: 'Sunflower', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #fff;
+
+  background-color: burlywood;
+  background-image: url(/src/assets/images/desert.jpg);
+  background-position: center;
+  background-size: cover;
+
+  display: grid;
+  grid-template-columns: repeat(12, auto);
+  grid-template-rows: repeat(6, auto);
+
+  ul {
+    display: flex;
+    flex-flow: wrap row;
+
+    li {
+      &::after {
+        content: '⋰';
+        float: inline-start;
+        padding-inline: 0.4rem;
+      }
+    }
+
+    a {
+      padding: 5px;
+      &:hover {
+        background-color: rgba(0, 128, 255, 0.7);
+        text-shadow: 0 0 6px #fff;
+      }
+    }
+  }
+
+  h1,
+  h2 {
+    font-family: 'Doto', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: 'ROND' 0;
+    color: #fff;
+    font-size: xx-larger;
+  }
+
+  .ui-wrapper {
+    grid-area: 2 / 2 / 3 / span 9;
+  }
+
+  .html-wrapper {
+    grid-area: 3 / 2 / 4 / span 9;
+  }
+
+  .css-wrapper {
+    grid-area: 4 / 2 / 5 / span 9;
+  }
+
+  .review-wrapper {
+    grid-area: 1 / 8 / 2 / 13;
+  }
+}
