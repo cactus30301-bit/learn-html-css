@@ -11,7 +11,7 @@
   font-display: swap;
 } */
 
-* {
+/* * {
   cursor: url('/favicon/bs.png'), auto;
   hr {
     display: none;
@@ -19,7 +19,7 @@
 }
 
 body {
-  /* font-family: 'MapoGeumbitnaru', serif; */
+
   font-family: 'Sunflower', sans-serif;
   font-weight: 500;
   font-size: 18px;
@@ -82,4 +82,4 @@ body {
   .review-wrapper {
     grid-area: 1 / 8 / 2 / 13;
   }
-}
+} */
