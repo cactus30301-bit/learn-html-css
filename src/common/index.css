@@ -11,15 +11,14 @@
   font-display: swap;
 } */
 
-/* * {
+* {
   cursor: url('/favicon/bs.png'), auto;
   hr {
     display: none;
   }
 }
 
-body {
-
+.index-page {
   font-family: 'Sunflower', sans-serif;
   font-weight: 500;
   font-size: 18px;
@@ -60,11 +59,20 @@ body {
   h2 {
     font-family: 'Doto', sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 700;
     font-style: normal;
     font-variation-settings: 'ROND' 0;
     color: #fff;
-    font-size: xx-larger;
+  }
+
+  h1 {
+    font-size: 60px;
+    font-weight: 300;
+  }
+
+  h2 {
+    font-size: 44px;
+    font-weight: 200;
   }
 
   .ui-wrapper {
@@ -82,4 +90,4 @@ body {
   .review-wrapper {
     grid-area: 1 / 8 / 2 / 13;
   }
-} */
+}
