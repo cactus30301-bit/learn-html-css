@@ -48,3 +48,39 @@
     }
   }
 }
+
+/* Ediya News */
+.news {
+  background: #3030e0;
+  color: #fff;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-template-columns: minmax(200px, 1fr) max-content;
+  padding: 16px;
+  gap: 8px;
+
+  .news-title {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.02em;
+
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .news-list,
+  .news-item {
+    display: contents;
+  }
+
+  .news-list {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    a {
+      background: pink;
+      /* white-space: nowrap; */
+    }
+  }
+}
